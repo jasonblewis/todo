@@ -1,3 +1,11 @@
+# basic sveltekit project to learn how to use lucia with sveltekit
+based on https://github.com/edwardspresume/sveltekit-lucia-auth-v3-example
+
+# to install
+pnpm install
+echo "DATABASE_URL='localDB/sqlite.db" >> .env
+
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
