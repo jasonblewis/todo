@@ -4,6 +4,27 @@ based on https://github.com/edwardspresume/sveltekit-lucia-auth-v3-example
 # to install
 pnpm install
 echo "DATABASE_URL='localDB/sqlite.db" >> .env
+mkdir localDB
+pnpm db:generate
+pnpm db:push
+pnpm run dev
+
+visit  http://localhost:5173/auth/register
+
+note errors:
+```
+  VITE v5.1.6  ready in 1380 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+TypeError: Cannot read properties of undefined (reading 'defaults')
+    at Module.superValidate (/home/jason/projects/svelteprojects/todo-test/node_modules/.pnpm/sveltekit-superforms@2.10.5_@sveltejs+kit@2.5.4_@types+json-schema@7.0.15_esbuild-runner@2.2._qjf2gblorr4dib6zfg2evsbvbm/node_modules/sveltekit-superforms/dist/superValidate.js:19:53)
+    at load (/home/jason/projects/svelteprojects/todo-test/src/routes/auth/register/+page.server.ts:19:31)
+    at Module.load_server_data (/home/jason/projects/svelteprojects/todo-test/node_modules/.pnpm/@sveltejs+kit@2.5.4_@sveltejs+vite-plugin-svelte@3.0.2_svelte@4.2.12_vite@5.1.6/node_modules/@sveltejs/kit/src/runtime/server/page/load_data.js:61:41)
+    at /home/jason/projects/svelteprojects/todo-test/node_modules/.pnpm/@sveltejs+kit@2.5.4_@sveltejs+vite-plugin-svelte@3.0.2_svelte@4.2.12_vite@5.1.6/node_modules/@sveltejs/kit/src/runtime/server/page/index.js:140:19
+
+```
 
 
 # create-svelte
