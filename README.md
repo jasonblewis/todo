@@ -2,12 +2,14 @@
 based on https://github.com/edwardspresume/sveltekit-lucia-auth-v3-example
 
 # to install
+```
 pnpm install
 echo "DATABASE_URL='localDB/sqlite.db" >> .env
 mkdir localDB
 pnpm db:generate
 pnpm db:push
 pnpm run dev
+```
 
 visit  http://localhost:5173/auth/register
 
