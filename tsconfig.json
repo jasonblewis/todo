@@ -1,0 +1,9 @@
+{
+  "extends": "./.svelte-kit/tsconfig.json",
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "esnext",
+    "explainFiles": true,
+    "strictNullChecks": true
+  }
+}
