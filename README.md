@@ -3,6 +3,8 @@ based on https://github.com/edwardspresume/sveltekit-lucia-auth-v3-example
 
 # to install
 ```
+git clone https://github.com/jasonblewis/todo.git todo-test
+cd todo-test
 pnpm install
 echo "DATABASE_URL='localDB/sqlite.db" >> .env
 mkdir localDB
